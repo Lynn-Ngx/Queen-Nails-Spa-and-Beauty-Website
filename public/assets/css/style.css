@@ -244,163 +244,6 @@ body {
 }
 
 
-#contact {
-  font-family: 'Ubuntu';
-  min-height: 100vh;
-}
-#contact .wrapper {
-  text-align: center;
-}
-#contact .wrapper > * {
-  display: block;
-  vertical-align: top;
-  padding: 10px;
-  width: 500px;
-  margin: auto;
-}
-@media screen and (max-width: 550px) {
-  #contact .wrapper > * {
-    width: 90%;
-  }
-}
-#contact .wrapper #email {
-  text-align: center;
-  margin: 20px auto;
-}
-#contact .wrapper #socialMedia .singleSocial {
-  margin: 30px 20px;
-  display: inline-grid;
-  text-align: center;
-}
-#contact .wrapper #socialMedia .singleSocial a {
-  text-decoration: none;
-  font-size: 1.5em;
-  color: black;
-  letter-spacing: 1px;
-}
-#contact .wrapper #socialMedia .singleSocial a .colouredText {
-  color: #ae8b4a;
-}
-#contact .wrapper #socialMedia .singleSocial .socialImg {
-  padding-left: 60px;
-  padding-bottom: 10px;
-}
-#location {
-  padding: 30px 0;
-}
-#location #map {
-  display: inline-block;
-  width: 400px;
-  height: 400px;
-}
-@media screen and (max-width: 400px) {
-  #location #map {
-    width: 90%;
-  }
-}
-#location .info {
-  font-family: Ubuntu;
-  display: inline-block;
-  font-size: 20px;
-  text-align: left;
-  padding: 0 30px;
-  margin-left: 10px;
-  margin-top: 120px;
-  vertical-align: top;
-}
-@media screen and (max-width: 813px) {
-  #location .info {
-    margin-top: 0px;
-    margin-left: 0;
-  }
-}
-form .inputWrapper {
-  text-align: center;
-  width: 100%;
-  margin: 35px auto;
-  height: 40px;
-  -webkit-box-shadow: 0 5px 0 0 lightgrey;
-  -moz-box-shadow: 0 5px 0 0 lightgrey;
-  box-shadow: 0 5px 0 0 lightgrey;
-  transition: 0.5s;
-  background: #e6e6e6;
-}
-form .inputWrapper:focus-within {
-  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
-  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
-  box-shadow: 0 5px 0 0 #ae8b4a;
-  background: #f0f0f0;
-}
-form .inputWrapper .inputImg {
-  display: inline-block;
-  float: left;
-  width: 25px;
-  margin: 8px;
-}
-form .inputWrapper input {
-  height: 30px;
-  width: calc(100% - (25px + 40px));
-  margin: 0;
-  font-size: 16px;
-  padding-left: 10px;
-  display: inline-block;
-  border: none;
-  outline: none;
-  vertical-align: top;
-  transition: 0.5s;
-  background: #e6e6e6;
-}
-form .inputWrapper input:focus-within {
-  background: #f0f0f0;
-}
-form .inputWrapper textarea {
-  height: 186px;
-  padding-top: 10px;
-  width: calc(100% - (25px + 40px));
-  margin: 0;
-  font-size: 16px;
-  padding-left: 10px;
-  display: inline-block;
-  border: none;
-  vertical-align: top;
-  resize: none;
-  outline: none;
-  transition: 0.5s;
-  background: #e6e6e6;
-}
-form .inputWrapper textarea:focus-within {
-  background: #f0f0f0;
-}
-form .message {
-  height: 200px;
-}
-form input[type="submit"] {
-  cursor: pointer;
-  margin: 0;
-  font-size: 18px;
-  padding: 10px 60px;
-  display: inline-block;
-  vertical-align: top;
-  border: none;
-  background: #e6e6e6;
-  outline: none;
-  -webkit-box-shadow: 0 5px 0 0 lightgrey;
-  -moz-box-shadow: 0 5px 0 0 lightgrey;
-  box-shadow: 0 5px 0 0 lightgrey;
-  transition: 0.5s;
-}
-form input[type="submit"]:focus-within {
-  background: #f0f0f0;
-}
-form input[type="submit"]:focus-within {
-  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
-  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
-  box-shadow: 0 5px 0 0 #ae8b4a;
-}
-form input[type="submit"]:focus-within:focus-within {
-  background: #f0f0f0;
-}
-
 #home {
   min-height: 100vh;
 }
@@ -597,6 +440,163 @@ form input[type="submit"]:focus-within:focus-within {
   color: blanchedalmond;
   font-size: 40px;
   margin-left: 10px;
+}
+
+#contact {
+  font-family: 'Ubuntu';
+  min-height: 100vh;
+}
+#contact .wrapper {
+  text-align: center;
+}
+#contact .wrapper > * {
+  display: block;
+  vertical-align: top;
+  padding: 10px;
+  width: 500px;
+  margin: auto;
+}
+@media screen and (max-width: 550px) {
+  #contact .wrapper > * {
+    width: 90%;
+  }
+}
+#contact .wrapper #email {
+  text-align: center;
+  margin: 20px auto;
+}
+#contact .wrapper #socialMedia .singleSocial {
+  margin: 30px 20px;
+  display: inline-grid;
+  text-align: center;
+}
+#contact .wrapper #socialMedia .singleSocial a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  letter-spacing: 1px;
+}
+#contact .wrapper #socialMedia .singleSocial a .colouredText {
+  color: #ae8b4a;
+}
+#contact .wrapper #socialMedia .singleSocial .socialImg {
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+#location {
+  padding: 30px 0;
+}
+#location #map {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 400px) {
+  #location #map {
+    width: 90%;
+  }
+}
+#location .info {
+  font-family: Ubuntu;
+  display: inline-block;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 30px;
+  margin-left: 10px;
+  margin-top: 120px;
+  vertical-align: top;
+}
+@media screen and (max-width: 813px) {
+  #location .info {
+    margin-top: 0px;
+    margin-left: 0;
+  }
+}
+form .inputWrapper {
+  text-align: center;
+  width: 100%;
+  margin: 35px auto;
+  height: 40px;
+  -webkit-box-shadow: 0 5px 0 0 lightgrey;
+  -moz-box-shadow: 0 5px 0 0 lightgrey;
+  box-shadow: 0 5px 0 0 lightgrey;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper:focus-within {
+  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
+  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
+  box-shadow: 0 5px 0 0 #ae8b4a;
+  background: #f0f0f0;
+}
+form .inputWrapper .inputImg {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  margin: 8px;
+}
+form .inputWrapper input {
+  height: 30px;
+  width: calc(100% - (25px + 40px));
+  margin: 0;
+  font-size: 16px;
+  padding-left: 10px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  vertical-align: top;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper input:focus-within {
+  background: #f0f0f0;
+}
+form .inputWrapper textarea {
+  height: 186px;
+  padding-top: 10px;
+  width: calc(100% - (25px + 40px));
+  margin: 0;
+  font-size: 16px;
+  padding-left: 10px;
+  display: inline-block;
+  border: none;
+  vertical-align: top;
+  resize: none;
+  outline: none;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper textarea:focus-within {
+  background: #f0f0f0;
+}
+form .message {
+  height: 200px;
+}
+form input[type="submit"] {
+  cursor: pointer;
+  margin: 0;
+  font-size: 18px;
+  padding: 10px 60px;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background: #e6e6e6;
+  outline: none;
+  -webkit-box-shadow: 0 5px 0 0 lightgrey;
+  -moz-box-shadow: 0 5px 0 0 lightgrey;
+  box-shadow: 0 5px 0 0 lightgrey;
+  transition: 0.5s;
+}
+form input[type="submit"]:focus-within {
+  background: #f0f0f0;
+}
+form input[type="submit"]:focus-within {
+  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
+  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
+  box-shadow: 0 5px 0 0 #ae8b4a;
+}
+form input[type="submit"]:focus-within:focus-within {
+  background: #f0f0f0;
 }
 
 #services {
