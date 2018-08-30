@@ -1,0 +1,124 @@
+<div id="contact">
+    <div id="emailNotSent" class="wrapper">
+        <div id="email">
+                <h1 style="font-family: Stalemate; font-size: 60px">Contact Us By Email</h1>
+                <form ng-submit="main.sendMail(main.data)">
+
+                    <div class="inputWrapper">
+                        <div class="inputImg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 563.43 563.43" style="enable-background:new 0 0 563.43 563.43;" xml:space="preserve" class=""><g><path d="M280.79,314.559c83.266,0,150.803-67.538,150.803-150.803S364.055,13.415,280.79,13.415S129.987,80.953,129.987,163.756  S197.524,314.559,280.79,314.559z M280.79,52.735c61.061,0,111.021,49.959,111.021,111.021S341.851,274.776,280.79,274.776  s-111.021-49.959-111.021-111.021S219.728,52.735,280.79,52.735z" data-original="#000000" class="active-path" data-old_color="#A43636" fill="#959595"/><path d="M19.891,550.015h523.648c11.102,0,19.891-8.789,19.891-19.891c0-104.082-84.653-189.198-189.198-189.198H189.198  C85.116,340.926,0,425.579,0,530.124C0,541.226,8.789,550.015,19.891,550.015z M189.198,380.708h185.034  c75.864,0,138.313,56.436,148.028,129.524H41.17C50.884,437.607,113.334,380.708,189.198,380.708z" data-original="#000000" class="active-path" data-old_color="#A43636" fill="#959595"/></g> </svg>
+                        </div>
+                        <input ng-model="main.data.name" type="text" placeholder="Name..." required>
+                    </div>
+
+                    <div class="inputWrapper">
+                        <div class="inputImg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 511.626 511.626" style="enable-background:new 0 0 511.626 511.626;" xml:space="preserve"><g><g><g><path d="M49.106,178.729c6.472,4.567,25.981,18.131,58.528,40.685c32.548,22.554,57.482,39.92,74.803,52.099    c1.903,1.335,5.946,4.237,12.131,8.71c6.186,4.476,11.326,8.093,15.416,10.852c4.093,2.758,9.041,5.852,14.849,9.277    c5.806,3.422,11.279,5.996,16.418,7.7c5.14,1.718,9.898,2.569,14.275,2.569h0.287h0.288c4.377,0,9.137-0.852,14.277-2.569    c5.137-1.704,10.615-4.281,16.416-7.7c5.804-3.429,10.752-6.52,14.845-9.277c4.093-2.759,9.229-6.376,15.417-10.852    c6.184-4.477,10.232-7.375,12.135-8.71c17.508-12.179,62.051-43.11,133.615-92.79c13.894-9.703,25.502-21.411,34.827-35.116    c9.332-13.699,13.993-28.07,13.993-43.105c0-12.564-4.523-23.319-13.565-32.264c-9.041-8.947-19.749-13.418-32.117-13.418H45.679    c-14.655,0-25.933,4.948-33.832,14.844C3.949,79.562,0,91.934,0,106.779c0,11.991,5.236,24.985,15.703,38.974    C26.169,159.743,37.307,170.736,49.106,178.729z" data-original="#000000" class="active-path" data-old_color="#D3B6B6" fill="#959595"/><path d="M483.072,209.275c-62.424,42.251-109.824,75.087-142.177,98.501c-10.849,7.991-19.65,14.229-26.409,18.699    c-6.759,4.473-15.748,9.041-26.98,13.702c-11.228,4.668-21.692,6.995-31.401,6.995h-0.291h-0.287    c-9.707,0-20.177-2.327-31.405-6.995c-11.228-4.661-20.223-9.229-26.98-13.702c-6.755-4.47-15.559-10.708-26.407-18.699    c-25.697-18.842-72.995-51.68-141.896-98.501C17.987,202.047,8.375,193.762,0,184.437v226.685c0,12.57,4.471,23.319,13.418,32.265    c8.945,8.949,19.701,13.422,32.264,13.422h420.266c12.56,0,23.315-4.473,32.261-13.422c8.949-8.949,13.418-19.694,13.418-32.265    V184.437C503.441,193.569,493.927,201.854,483.072,209.275z" data-original="#000000" class="active-path" data-old_color="#D3B6B6" fill="#959595"/></g></g></g> </svg>
+                        </div>
+                        <input ng-model="main.data.email" type="email" placeholder="Email..." required>
+                    </div>
+
+                    <div class="inputWrapper">
+                        <div class="inputImg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class=""><g><g><g><g><path d="M331.858,297.012c7.811,7.811,20.474,7.811,28.284,0l53.74-53.74c7.811-7.811,7.811-20.474,0-28.284     c-7.811-7.81-20.474-7.811-28.284,0L346,254.586l-39.598-39.598c-7.811-7.811-20.474-7.811-28.284,0     c-7.81,7.811-7.811,20.474,0,28.284L331.858,297.012z" data-original="#000000" class="active-path" data-old_color="#842929" fill="#959595"/><path d="M126.402,297.012L166,257.414l39.598,39.598c7.811,7.811,20.474,7.811,28.284,0c7.811-7.811,7.811-20.474,0-28.284     l-53.74-53.74c-7.811-7.811-20.474-7.811-28.284,0l-53.74,53.74c-7.811,7.811-7.811,20.474,0,28.284     C105.929,304.822,118.592,304.823,126.402,297.012z" data-original="#000000" class="active-path" data-old_color="#842929" fill="#959595"/><path d="M492,66H20C8.954,66,0,74.954,0,86v340c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20V86     C512,74.954,503.046,66,492,66z M472,406H40V106h432V406z" data-original="#000000" class="active-path" data-old_color="#842929" fill="#959595"/></g></g></g></g> </svg>
+                        </div>
+                        <input ng-model="main.data.subject"  type="text" placeholder="Subject..." required>
+                    </div>
+
+                    <div class="inputWrapper message">
+                        <div class="inputImg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 432.544 432.544" style="enable-background:new 0 0 432.544 432.544;" xml:space="preserve" class=""><g><g><g><path d="M0,313.775v118.77h118.771l237.541-237.541L237.539,76.232L0,313.775z M103.638,395.999L103.638,395.999l-30.55,0.004    v-36.546H36.545v-30.553l25.981-25.981l67.093,67.092L103.638,395.999z M246.683,124.77c4.182,0,6.276,2.095,6.276,6.28    c0,1.906-0.664,3.521-1.999,4.856L96.214,290.651c-1.333,1.328-2.952,1.995-4.854,1.995c-4.184,0-6.279-2.098-6.279-6.279    c0-1.906,0.666-3.521,1.997-4.856l154.747-154.743C243.154,125.436,244.773,124.77,246.683,124.77z" data-original="#000000" class="active-path" data-old_color="#5D3838" fill="#959595"/><path d="M421.976,77.654l-67.091-66.806C347.653,3.619,338.992,0,328.903,0c-10.283,0-18.842,3.619-25.693,10.848l-47.394,47.109    l118.773,118.77l47.394-47.392c7.042-7.043,10.561-15.608,10.561-25.697C432.54,93.743,429.022,85.08,421.976,77.654z" data-original="#000000" class="active-path" data-old_color="#5D3838" fill="#959595"/></g></g></g> </svg>
+                        </div>
+                        <textarea ng-model="main.data.message"  placeholder="Message..." required></textarea>
+                    </div>
+
+
+                    <input type="submit" value="Send" >
+
+                </form>
+
+        </div>
+
+        <div class="container location">
+            <div id="location" class="wrapper">
+                <div id="map"></div>
+                <div class="info">
+                    217 Edenmore Avenue, <br> Dublin 5,  <br> Ireland
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="socialMedia">
+            <h1>Or reach us through</h1>
+
+            <div class="singleSocial">
+                <div class="socialImg" style="width: 65px">
+                    <a href="http://facebook.com/queennailspaandbeauty/">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 408.788 408.788;" xml:space="preserve"><path style="fill:#475993;" d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085C408.786,24.662,384.124,0,353.701,0z"/><g></g><g></g><g></g><g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </a>
+                </div>
+                <a href="https://www.snapchat.com/add/2" target="_blank">@queen<span class="colouredText">nails</span></a>
+            </div>
+
+            <div class="singleSocial">
+                <div class="socialImg" style="width: 65px">
+                    <a href="https://www.instagram.com/queen_nails217/"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"><stop  offset="0" style="stop-color:#E09B3D"/><stop  offset="0.3" style="stop-color:#C74C4D"/><stop  offset="0.6" style="stop-color:#C21975"/><stop  offset="1" style="stop-color:#7024C4"/></linearGradient><path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"><stop  offset="0" style="stop-color:#E09B3D"/><stop  offset="0.3" style="stop-color:#C74C4D"/><stop  offset="0.6" style="stop-color:#C21975"/><stop  offset="1" style="stop-color:#7024C4"/></linearGradient><path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"><stop  offset="0" style="stop-color:#E09B3D"/><stop  offset="0.3" style="stop-color:#C74C4D"/><stop  offset="0.6" style="stop-color:#C21975"/><stop  offset="1" style="stop-color:#7024C4"/></linearGradient><circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"/></g><g></g><g></g><g></g><g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
+                </div>
+                <a href="https://www.instagram.com/queen_nails217/" target="_blank">@queen<span class="colouredText">nails</span></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="emailSent" style="min-height: calc(100vh - 150px); display: none" >
+
+        <div class="wrapper" style="margin: auto">
+            <div style="width: 300px">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M510.576,264.536l-58.431-157.94c-2.122-5.739-6.353-10.307-11.913-12.863c-5.559-2.556-11.78-2.796-17.519-0.672
+			L137.796,198.467c-5.739,2.123-10.307,6.354-12.864,11.912c-2.556,5.559-2.795,11.781-0.672,17.519l58.431,157.94
+			c2.122,5.739,6.353,10.307,11.913,12.864c3.05,1.403,6.299,2.107,9.559,2.107c2.682,0,5.37-0.476,7.961-1.435l284.918-105.406
+			h0.001C508.886,289.585,514.958,276.382,510.576,264.536z M407.052,123.279l-88.377,126.344l-149.327-38.405L407.052,123.279z
+			 M200.044,366.731l-50.683-137l117.382,30.192L200.044,366.731z M224.863,370.237l65.152-104.33l30.642,7.882
+			c0.951,0.241,1.913,0.367,2.852,0.367c3.688,0,7.216-1.787,9.392-4.891l18.133-25.944l117.369,36.818L224.863,370.237z
+			 M364.814,223.638l69.463-99.324l50.703,137.019L364.814,223.638z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M133.44,388.976c-2.194-5.933-8.786-8.961-14.715-6.768l-43.162,15.968c-5.933,2.196-8.962,8.784-6.768,14.716
+			c1.71,4.623,6.086,7.482,10.743,7.482c1.319,0,2.663-0.23,3.973-0.715l43.16-15.968
+			C132.606,401.498,135.635,394.909,133.44,388.976z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M75.023,282.646c-2.196-5.933-8.785-8.96-14.716-6.768l-26.643,9.857c-5.933,2.196-8.962,8.783-6.768,14.716
+			c1.71,4.622,6.087,7.482,10.743,7.482c1.319,0,2.663-0.23,3.973-0.715l26.643-9.857C74.188,295.168,77.218,288.579,75.023,282.646
+			z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M41.995,369.408c-2.196-5.933-8.785-8.962-14.716-6.768l-19.797,7.324c-5.933,2.196-8.962,8.784-6.768,14.716
+			c1.71,4.622,6.086,7.482,10.743,7.482c1.319,0,2.663-0.23,3.973-0.715l19.797-7.324C41.161,381.929,44.19,375.341,41.995,369.408z
+			"/>
+	</g>
+</g>
+
+</svg>
+
+
+            </div>
+            <p style="font-family: Ubuntu; font-size: 40px">Email Received</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,174 @@
+#contact{
+  font-family: 'Ubuntu';
+  min-height: 100vh;
+
+
+  .wrapper{
+    text-align: center;
+    > * {
+      display: block;
+      vertical-align: top;
+      padding: 10px;
+      width: 500px;
+      margin: auto;
+      @media screen and (max-width: 550px) {
+        width: 90%;
+
+      }
+
+    }
+    #email{
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    #socialMedia{
+      .singleSocial {
+        margin: 30px 20px;
+        display: inline-grid;
+        text-align: center;
+        a {
+          text-decoration: none;
+          font-size: 1.5em;
+          color: black;
+          letter-spacing: 1px;
+          .colouredText {
+            color: rgba(174,139,74,1);
+          }
+        }
+        .socialImg {
+          padding-left: 60px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@shadowColor: rgb(240, 240, 240);
+
+#location{
+  padding: 30px 0;
+  #map{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    @media screen and (max-width: 400px) {
+      width: 90%
+
+    }
+  }
+  .info{
+    font-family: Ubuntu;
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+    padding: 0 30px;
+    margin-left: 10px;
+    margin-top: 120px;
+    vertical-align: top;
+    @media screen and (max-width: 813px) {
+      margin-top: 0px;
+      margin-left: 0;
+    }
+  }
+}
+
+form {
+
+  @imageSize: 25px;
+
+  .inputWrapper {
+    text-align: center;
+    //width: 279px;
+    width: 100%;
+    margin: 35px auto;
+    height: 40px;
+    -webkit-box-shadow: 0 5px 0 0 lightgrey;
+    -moz-box-shadow: 0 5px 0 0 lightgrey;
+    box-shadow: 0 5px 0 0 lightgrey;
+    transition: .5s;
+    background: rgb(230, 230, 230);
+    &:focus-within {
+      -webkit-box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+      -moz-box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+      box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+      background: rgb(240, 240, 240);
+    }
+    .inputImg {
+      display: inline-block;
+      float: left;
+      width: @imageSize;
+      margin: 8px;
+    }
+
+    input{
+      height: 30px;
+      width: calc(100% - (@imageSize + 40px));
+      margin: 0;
+      font-size: 16px;
+      padding-left: 10px;
+      display: inline-block;
+      border: none;
+      outline: none;
+      vertical-align: top;
+      transition: .5s;
+      background: rgb(230, 230, 230);
+      &:focus-within{
+        background: @shadowColor;
+      }
+    }
+
+    textarea {
+      height: 186px;
+      padding-top: 10px;
+      width: calc(100% - (@imageSize + 40px));
+      margin: 0;
+      font-size: 16px;
+      padding-left: 10px;
+      display: inline-block;
+      border: none;
+      vertical-align: top;
+      resize: none;
+      outline: none;
+      transition: .5s;
+      background: rgb(230, 230, 230);
+      &:focus-within{
+        background: @shadowColor;
+      }
+    }
+
+  }
+
+  .message {
+    height: 200px;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px 60px;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background: rgb(230, 230, 230);
+    outline: none;
+    -webkit-box-shadow: 0 5px 0 0 lightgrey;
+    -moz-box-shadow: 0 5px 0 0 lightgrey;
+    box-shadow: 0 5px 0 0 lightgrey;
+    transition: .5s;
+    &:focus-within{
+      background: @shadowColor;
+    }
+  }
+
+  input[type="submit"]:focus-within {
+    -webkit-box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+    -moz-box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+    box-shadow: 0 5px 0 0 rgba(174,139,74,1);
+    &:focus-within{
+      background: @shadowColor;
+    }
+  }
+
+}

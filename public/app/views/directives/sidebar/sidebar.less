@@ -1,0 +1,50 @@
+@navbarHeight: 40px;
+@optionHeight: 30px;
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+  transition: all 0.3s;
+
+  .topHeader{
+    height: @navbarHeight;
+    background-color: blue;
+  }
+
+  .options {
+
+    margin-top: 30px;
+    cursor: pointer;
+
+    :hover{
+      opacity: 0.5;
+    }
+
+    .option{
+      height: 35px;
+      background-color: red;
+      padding: 5px 15px;
+
+      p{
+        height: 100%;
+        line-height: 40px;
+        background-color: blue;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        font-family: Arial;
+      }
+
+      div{
+        width: 35px;
+        height: 35px;
+        float: right;
+      }
+    }
+
+  }
+
+}

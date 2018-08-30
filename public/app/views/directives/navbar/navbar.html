@@ -1,0 +1,21 @@
+<div>
+    <div id="navbar">
+
+
+
+        <div class="toggle" ng-click="toggleNavbar()">
+            <toggle  svg-fill="white"></toggle>
+        </div>
+
+        <div id="navbarWrapper">
+            <div ng-repeat="field in fields" class="navbarField" ng-class="{'selected': selectedField === field.name}">
+                <a href="{{field.href}}" ng-bind="field.name" ng-click="fieldClicked(field.name)"></a>
+                <div class="underline"></div>
+            </div>
+
+            <div class="navbarField" style="height: 30px">
+                <a href="https://www.facebook.com/queennailspaandbeauty/" style="border: 1px solid blanchedalmond; line-height: 30px">Book</a>
+            </div>
+        </div>
+    </div>
+</div>

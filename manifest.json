@@ -1,0 +1,36 @@
+{
+  "name": "MEAN-Skeleton",
+  "browserify": {
+    "vendor": {
+      "folder": "./public/assets/js",
+      "filename": "vendor.js",
+      "dependencies": [
+        "angular",
+        "angular-route",
+        "angular-animate"
+      ]
+    },
+    "bundle": {
+      "folder": "./public/assets/js",
+      "filename": "bundle.js",
+      "files": [
+        "./public/app/app.js"
+      ]
+    },
+    "ignore": [
+      "gulpfile.js",
+      "**/node_modules/**",
+      "package.json",
+      ".idea/**",
+      "**/*.less"
+    ]
+  }
+}
+
+
+
+
+
+
+
+

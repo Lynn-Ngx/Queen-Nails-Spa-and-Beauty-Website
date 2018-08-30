@@ -1,0 +1,216 @@
+
+#home{
+  min-height: 100vh;
+
+  #homeBackgroundImage {
+    background-image: url('../../../../assets/images/home2.jpg');
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 800px) {
+      background-attachment: fixed;
+
+    }
+
+    .barberName {
+      margin-top: 20px;
+      text-align: center;
+      p {
+        color: black;
+        padding: 30px 0 30px 0;
+        margin: 0;
+        font-family: "Arial Rounded MT Bold";
+        font-size: 80px;
+        letter-spacing: 2px;
+        @media screen and (max-width: 600px) {
+          font-size: 60px;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 40px;
+        }
+      }
+      img {
+        width: 200px;
+        @media screen and (max-width: 400px) {
+          width: 130px;
+        }
+      }
+    }
+
+  }
+
+  .container{
+    .wrapper{
+      margin: auto;
+      max-width: 1200px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    &.openingHours{
+      background-color: rgb(245, 245, 245);
+      #openingHours{
+        @rowHeight: 50px;
+          margin-top: 80px;
+          padding: 10px;
+
+          .wrapper{
+            //background-color: rgb(233, 233, 233);
+            padding: 0 10px 10px 10px;
+            max-width: 500px;
+            margin: 0 auto 0 auto;
+            .heading{
+              margin: 0;
+              padding: 5px 0;
+              color: black;
+              font-size: 50px;
+              font-family: Stalemate;
+            }
+
+            .service{
+
+              width: calc(100% - 20px);
+              height: @rowHeight;
+              margin-bottom: 1px;
+              background-color: white;
+              border-radius: 2px;
+              padding: 0 10px;
+              overflow: hidden;
+              > * {
+                margin: 0;
+                line-height: @rowHeight;
+              }
+              .title{
+                float: left;
+                font-size: 16px;
+
+                font-family: Verdana;
+              }
+              .time{
+                width:50px;
+                float: right;
+                font-family: Arial;
+                font-weight: lighter;
+                color: darkgrey;
+                font-size: 13px;
+                padding: 0 2px;
+
+
+
+              }
+              .price{
+                width:150px;
+                float: right;
+                font-size: 14px;
+                font-family: "Arial Rounded MT Bold";
+
+              }
+
+            }
+          }
+      }
+    }
+
+    #location{
+      padding: 30px 0;
+      #map{
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+        @media screen and (max-width: 400px) {
+          width: 90%
+
+        }
+      }
+      .info{
+        font-family: Ubuntu;
+        display: inline-block;
+        font-size: 20px;
+        text-align: left;
+        padding: 0 30px;
+        margin-left: 10px;
+        margin-top: 120px;
+        vertical-align: top;
+        @media screen and (max-width: 813px) {
+          margin-top: 0px;
+          margin-left: 0;
+        }
+      }
+    }
+
+    #briefServices{
+      text-align: center;
+      .heading{
+        p{
+          color: black;
+          font-size: 60px;
+          padding: 0;
+          margin: 10px 0 30px 0;
+          font-family: Stalemate;
+          letter-spacing: 2px;
+          font-weight: bolder;
+        }
+      }
+      .service{
+        margin: 10px;
+        padding: 10px 10px 10px 70px;
+        position: relative;
+        max-width: 400px;
+        display: inline-grid;
+        .image{
+          width: 60px;
+          position: absolute;
+          left: 10px;
+        }
+        .title{
+          padding: 0 0 0 25px;
+          font-family: Ubuntu;
+          font-size: 24px;
+          font-weight: bolder;
+          color: black;
+          display: inline-block;
+          margin: 0;
+          text-align: left;
+        }
+
+        .description{
+          font-family: Ubuntu;
+          text-align: left;
+          padding: 0 0 0 25px;
+
+        }
+      }
+
+    }
+
+
+  }
+}
+.typewriteWrapper{
+  position: absolute;
+  top: 450px;
+  font-family: Ubuntu;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  @media screen and (max-width: 400px) {
+    top: 300px;
+  }
+
+
+  .stillText{
+    margin: 0;
+    color: black;
+    text-align: center;
+  }
+  div{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 40px;
+    margin-left: 10px
+  }
+
+}

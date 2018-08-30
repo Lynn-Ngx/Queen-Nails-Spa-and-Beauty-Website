@@ -1,0 +1,718 @@
+body {
+  margin: 50px 0 0 0;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+#footer {
+  background-color: #5c301c;
+  font-family: Ubuntu;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+#footer p {
+  margin: 0 0 1px 0;
+  padding: 0;
+  color: white;
+}
+#footer .icons {
+  border-top: 1px solid white;
+  padding-top: 5px;
+  width: 120px;
+  margin: 5px auto 0 auto;
+}
+#footer .icon {
+  width: 30px;
+  margin: 0 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+#footer .icon:hover {
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: Stalemate;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../assets/fonts/Stalemate/Stalemate-Regular.ttf);
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5c301c;
+  z-index: 1000;
+  height: 50px;
+}
+#navbar.scrolled {
+  background-color: black;
+}
+#navbar.notScrolled {
+  background-color: grey;
+}
+@media screen and (max-width: 700px) {
+  #navbar {
+    direction: rtl;
+    padding: 0;
+  }
+}
+#navbar .toggle {
+  width: 30px;
+  margin-right: 20px;
+  padding-top: 10px;
+  height: calc(50px - 15px);
+  display: none;
+  cursor: pointer ;
+}
+@media screen and (max-width: 700px) {
+  #navbar .toggle {
+    display: block;
+  }
+}
+#navbar #navbarWrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: right;
+  display: block;
+  transition: 0.4s;
+  overflow: hidden;
+  background-color: #5c301c;
+}
+#navbar #navbarWrapper.hidden {
+  height: 0;
+}
+#navbar #navbarWrapper.un-hidden {
+  height: calc(50px * 5);
+}
+#navbar #navbarWrapper .navbarField {
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+}
+#navbar #navbarWrapper .navbarField.book {
+  border: 1px solid white;
+}
+@media screen and (max-width: 700px) {
+  #navbar #navbarWrapper .navbarField {
+    background-color: #282828;
+  }
+}
+#navbar #navbarWrapper .navbarField.selected .underline {
+  width: 90%;
+  background-color: blanchedalmond;
+}
+#navbar #navbarWrapper .navbarField.selected a {
+  color: blanchedalmond;
+}
+@media screen and (min-width: 800px) {
+  #navbar #navbarWrapper .navbarField:hover .underline {
+    background-color: blanchedalmond;
+    width: 90%;
+  }
+  #navbar #navbarWrapper .navbarField:hover a {
+    color: blanchedalmond;
+  }
+}
+#navbar #navbarWrapper .navbarField .underline {
+  transition: 0.3s;
+  margin: -8px auto 0px auto;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  width: 0px;
+  visibility: visible;
+}
+@media screen and (max-width: 700px) {
+  #navbar #navbarWrapper .navbarField .underline {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar #navbarWrapper .navbarField {
+    display: block;
+  }
+}
+#navbar #navbarWrapper .navbarField a {
+  line-height: 50px;
+  transition: 0.2s;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Stalemate';
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  padding: 0 10px;
+}
+#navbar #navbarWrapper:last-child {
+  padding-right: 20px;
+}
+@media screen and (max-width: 700px) {
+  #navbar #navbarWrapper:last-child {
+    padding-right: 0px;
+  }
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKcg72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKew72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKcw72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKfA72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKcQ72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #1f1f1f;
+  transition: all 0.3s;
+}
+#sidebar .topHeader {
+  height: 40px;
+  background-color: blue;
+}
+#sidebar .options {
+  margin-top: 30px;
+  cursor: pointer;
+}
+#sidebar .options :hover {
+  opacity: 0.5;
+}
+#sidebar .options .option {
+  height: 35px;
+  background-color: red;
+  padding: 5px 15px;
+}
+#sidebar .options .option p {
+  height: 100%;
+  line-height: 40px;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-family: Arial;
+}
+#sidebar .options .option div {
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+
+
+#contact {
+  font-family: 'Ubuntu';
+  min-height: 100vh;
+}
+#contact .wrapper {
+  text-align: center;
+}
+#contact .wrapper > * {
+  display: block;
+  vertical-align: top;
+  padding: 10px;
+  width: 500px;
+  margin: auto;
+}
+@media screen and (max-width: 550px) {
+  #contact .wrapper > * {
+    width: 90%;
+  }
+}
+#contact .wrapper #email {
+  text-align: center;
+  margin: 20px auto;
+}
+#contact .wrapper #socialMedia .singleSocial {
+  margin: 30px 20px;
+  display: inline-grid;
+  text-align: center;
+}
+#contact .wrapper #socialMedia .singleSocial a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  letter-spacing: 1px;
+}
+#contact .wrapper #socialMedia .singleSocial a .colouredText {
+  color: #ae8b4a;
+}
+#contact .wrapper #socialMedia .singleSocial .socialImg {
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+#location {
+  padding: 30px 0;
+}
+#location #map {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 400px) {
+  #location #map {
+    width: 90%;
+  }
+}
+#location .info {
+  font-family: Ubuntu;
+  display: inline-block;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 30px;
+  margin-left: 10px;
+  margin-top: 120px;
+  vertical-align: top;
+}
+@media screen and (max-width: 813px) {
+  #location .info {
+    margin-top: 0px;
+    margin-left: 0;
+  }
+}
+form .inputWrapper {
+  text-align: center;
+  width: 100%;
+  margin: 35px auto;
+  height: 40px;
+  -webkit-box-shadow: 0 5px 0 0 lightgrey;
+  -moz-box-shadow: 0 5px 0 0 lightgrey;
+  box-shadow: 0 5px 0 0 lightgrey;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper:focus-within {
+  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
+  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
+  box-shadow: 0 5px 0 0 #ae8b4a;
+  background: #f0f0f0;
+}
+form .inputWrapper .inputImg {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  margin: 8px;
+}
+form .inputWrapper input {
+  height: 30px;
+  width: calc(100% - (25px + 40px));
+  margin: 0;
+  font-size: 16px;
+  padding-left: 10px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  vertical-align: top;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper input:focus-within {
+  background: #f0f0f0;
+}
+form .inputWrapper textarea {
+  height: 186px;
+  padding-top: 10px;
+  width: calc(100% - (25px + 40px));
+  margin: 0;
+  font-size: 16px;
+  padding-left: 10px;
+  display: inline-block;
+  border: none;
+  vertical-align: top;
+  resize: none;
+  outline: none;
+  transition: 0.5s;
+  background: #e6e6e6;
+}
+form .inputWrapper textarea:focus-within {
+  background: #f0f0f0;
+}
+form .message {
+  height: 200px;
+}
+form input[type="submit"] {
+  cursor: pointer;
+  margin: 0;
+  font-size: 18px;
+  padding: 10px 60px;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background: #e6e6e6;
+  outline: none;
+  -webkit-box-shadow: 0 5px 0 0 lightgrey;
+  -moz-box-shadow: 0 5px 0 0 lightgrey;
+  box-shadow: 0 5px 0 0 lightgrey;
+  transition: 0.5s;
+}
+form input[type="submit"]:focus-within {
+  background: #f0f0f0;
+}
+form input[type="submit"]:focus-within {
+  -webkit-box-shadow: 0 5px 0 0 #ae8b4a;
+  -moz-box-shadow: 0 5px 0 0 #ae8b4a;
+  box-shadow: 0 5px 0 0 #ae8b4a;
+}
+form input[type="submit"]:focus-within:focus-within {
+  background: #f0f0f0;
+}
+
+#home {
+  min-height: 100vh;
+}
+#home #homeBackgroundImage {
+  background-image: url('../../../../assets/images/home2.jpg');
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 800px) {
+  #home #homeBackgroundImage {
+    background-attachment: fixed;
+  }
+}
+#home #homeBackgroundImage .barberName {
+  margin-top: 20px;
+  text-align: center;
+}
+#home #homeBackgroundImage .barberName p {
+  color: black;
+  padding: 30px 0 30px 0;
+  margin: 0;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 600px) {
+  #home #homeBackgroundImage .barberName p {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #home #homeBackgroundImage .barberName p {
+    font-size: 40px;
+  }
+}
+#home #homeBackgroundImage .barberName img {
+  width: 200px;
+}
+@media screen and (max-width: 400px) {
+  #home #homeBackgroundImage .barberName img {
+    width: 130px;
+  }
+}
+#home .container .wrapper {
+  margin: auto;
+  max-width: 1200px;
+  padding: 10px;
+  text-align: center;
+}
+#home .container.openingHours {
+  background-color: #f5f5f5;
+}
+#home .container.openingHours #openingHours {
+  margin-top: 80px;
+  padding: 10px;
+}
+#home .container.openingHours #openingHours .wrapper {
+  padding: 0 10px 10px 10px;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+}
+#home .container.openingHours #openingHours .wrapper .heading {
+  margin: 0;
+  padding: 5px 0;
+  color: black;
+  font-size: 50px;
+  font-family: Stalemate;
+}
+#home .container.openingHours #openingHours .wrapper .service {
+  width: calc(100% - 20px);
+  height: 50px;
+  margin-bottom: 1px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+#home .container.openingHours #openingHours .wrapper .service > * {
+  margin: 0;
+  line-height: 50px;
+}
+#home .container.openingHours #openingHours .wrapper .service .title {
+  float: left;
+  font-size: 16px;
+  font-family: Verdana;
+}
+#home .container.openingHours #openingHours .wrapper .service .time {
+  width: 50px;
+  float: right;
+  font-family: Arial;
+  font-weight: lighter;
+  color: darkgrey;
+  font-size: 13px;
+  padding: 0 2px;
+}
+#home .container.openingHours #openingHours .wrapper .service .price {
+  width: 150px;
+  float: right;
+  font-size: 14px;
+  font-family: "Arial Rounded MT Bold";
+}
+#home .container #location {
+  padding: 30px 0;
+}
+#home .container #location #map {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 400px) {
+  #home .container #location #map {
+    width: 90%;
+  }
+}
+#home .container #location .info {
+  font-family: Ubuntu;
+  display: inline-block;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 30px;
+  margin-left: 10px;
+  margin-top: 120px;
+  vertical-align: top;
+}
+@media screen and (max-width: 813px) {
+  #home .container #location .info {
+    margin-top: 0px;
+    margin-left: 0;
+  }
+}
+#home .container #briefServices {
+  text-align: center;
+}
+#home .container #briefServices .heading p {
+  color: black;
+  font-size: 60px;
+  padding: 0;
+  margin: 10px 0 30px 0;
+  font-family: Stalemate;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+#home .container #briefServices .service {
+  margin: 10px;
+  padding: 10px 10px 10px 70px;
+  position: relative;
+  max-width: 400px;
+  display: inline-grid;
+}
+#home .container #briefServices .service .image {
+  width: 60px;
+  position: absolute;
+  left: 10px;
+}
+#home .container #briefServices .service .title {
+  padding: 0 0 0 25px;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-weight: bolder;
+  color: black;
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+}
+#home .container #briefServices .service .description {
+  font-family: Ubuntu;
+  text-align: left;
+  padding: 0 0 0 25px;
+}
+.typewriteWrapper {
+  position: absolute;
+  top: 450px;
+  font-family: Ubuntu;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+}
+@media screen and (max-width: 400px) {
+  .typewriteWrapper {
+    top: 300px;
+  }
+}
+.typewriteWrapper .stillText {
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+.typewriteWrapper div {
+  text-align: center;
+  color: blanchedalmond;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+#services {
+  margin-top: 80px;
+  padding: 0 10px 10px 10px;
+  min-height: 100vh;
+}
+#services .mainWrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+#services .wrapper {
+  background-color: #f0f0f0;
+  padding: 0 10px 10px 10px;
+  max-width: 500px;
+  margin: 20px;
+  display: inline-grid;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  #services .wrapper {
+    width: 90%;
+    margin: 20px 10px;
+  }
+}
+#services .wrapper .sectionHeading {
+  font-family: Ubuntu;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  padding: 5px 0;
+}
+#services .wrapper .service {
+  width: calc(100% - 20px);
+  height: 50px;
+  margin-bottom: 1px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+#services .wrapper .service > * {
+  margin: 0;
+  line-height: 50px;
+}
+#services .wrapper .service .title {
+  float: left;
+  font-size: 16px;
+  font-family: Verdana;
+}
+#services .wrapper .service .time {
+  width: 50px;
+  float: right;
+  font-family: Arial;
+  font-weight: lighter;
+  color: darkgrey;
+  font-size: 13px;
+  padding: 0 2px;
+}
+#services .wrapper .service .price {
+  width: 50px;
+  float: right;
+  font-size: 14px;
+  font-family: "Arial Rounded MT Bold";
+}
+
+#staff {
+  padding: 10px 10px 10px 10px;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+}
+#staff .staffs {
+  text-align: center;
+}
+#staff .staffs .staff {
+  display: inline-grid;
+  font-family: Arial;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+#staff .staffs .staff .imageWrapper {
+  text-align: center;
+}
+#staff .staffs .staff .imageWrapper .socialImg {
+  display: inline-block;
+  width: 30px;
+  padding-top: 10px;
+  transition: 0.4s ease-in-out;
+}
+#staff .staffs .staff .imageWrapper .socialImg:hover {
+  transform: scale(1.2);
+}
+#staff .staffs .staff .image {
+  transition: 0.2s;
+  margin: auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 100px;
+}
+#staff .staffs .staff .image:hover {
+  transform: scale(1.3);
+}
+#staff .staffs .staff .image img {
+  width: 100%;
+  border-radius: 25px;
+}
+#staff .staffs .staff .name {
+  margin: 10px 0 0 0;
+  font-size: 22px;
+  font-weight: bolder;
+}
+#staff .staffs .staff .description {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
