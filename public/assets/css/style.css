@@ -632,7 +632,7 @@ form input[type="submit"]:focus-within:focus-within {
 }
 #services .wrapper .service {
   width: calc(100% - 20px);
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 1px;
   background-color: white;
   border-radius: 2px;
@@ -641,13 +641,15 @@ form input[type="submit"]:focus-within:focus-within {
 }
 #services .wrapper .service > * {
   margin: 0;
-  line-height: 50px;
+  padding: 25px 0;
 }
 #services .wrapper .service .title {
   float: left;
   font-size: 16px;
-  font-family: Verdana;
+  width: calc(100% - 100px);
+  text-align: left;
   word-break: break-word;
+  font-family: Verdana;
 }
 #services .wrapper .service .time {
   width: 50px;
